@@ -4,7 +4,7 @@ import { FaPaw } from "react-icons/fa6";
 import { FaUserAlt } from "react-icons/fa";
 import { Table } from "react-bootstrap";
 import { CgAdd } from "react-icons/cg";
-import { InstagramLoader } from "../contentloader/instagramcontentloader";
+import { InstagramLoader } from "../contentLoader/instagramContentLoader";
 
 
 
@@ -156,9 +156,9 @@ export class DynamicTable extends Component {
                   </tbody>
                 </Table>
               </div>
-            ) : (
-              <> <InstagramLoader/></>
-            )}
+            ) : 
+           <InstagramLoader/>
+            }
               </div>
           </div>
         </div>

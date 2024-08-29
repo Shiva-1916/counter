@@ -1,6 +1,5 @@
 import { Instagram } from "react-content-loader";
 
-
 export const InstagramLoader = () => {
   return (
     <>
