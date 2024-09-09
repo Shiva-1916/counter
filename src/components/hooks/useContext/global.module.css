@@ -1,0 +1,11 @@
+button {
+    margin: 5px;
+    border-radius: 5px;
+}
+nav span{
+    margin-right: 15px;
+    margin-left: 5px;
+}
+body {
+    margin: 10px 0px 0px 10px;
+}
