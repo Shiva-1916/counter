@@ -1,12 +1,12 @@
-
-import CustomCounter from './components/hooks/useReducer/counter'
-import TableData from './reciepe-table/table-data'
+import CustomUseEffect from './components/hooks/useEffect/exampleuseEffect'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css'
 
 function App() {
 
   return (
     <>
-      
+     <CustomUseEffect/>
     </>
   )
 }

@@ -1,14 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import { BrowserRouter } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { TODO } from './components/hooks/useReducer/todo';
-import { CustomStack } from './components/hooks/useContext/stack';
+import App from './App.jsx';
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
- <BrowserRouter>
-  <CustomStack/>
- </BrowserRouter>
+  <App />
   </StrictMode>
 )
