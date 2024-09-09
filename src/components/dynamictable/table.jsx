@@ -140,7 +140,7 @@ export class DynamicTable extends Component {
                       return (
                         <tr key={eachProduct.id}>
                           <td>{eachProduct.id}</td>
-                          <td>{eachProduct.title}</td>
+                          <td>{eachProduct.title}</td>2
                           <td>{eachProduct.description}</td>
                           <td>
                             <img
