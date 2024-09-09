@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import style from "./useEffect.module.css"
+import style from "./exampleuseEffect.module.css"
 import CustomList from '../../lists/customlist'
 
 const CustomUseEffect = () => {
