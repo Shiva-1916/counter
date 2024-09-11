@@ -1,12 +1,13 @@
-import CustomUseEffect from './components/hooks/useEffect/exampleuseEffect'
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './index.css'
+import CustomUseEffect from './components/hooks/useEffect/exampleuseEffect';
+
 
 function App() {
 
   return (
     <>
-     <CustomUseEffect/>
+    <CustomUseEffect/>
     </>
   )
 }
