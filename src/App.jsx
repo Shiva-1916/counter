@@ -1,13 +1,18 @@
 
+import { Provider } from 'react-redux';
 import './index.css'
-import CustomUseEffect from './components/hooks/useEffect/exampleuseEffect';
+import Counter from './redux/counter';
+import store from './redux/store';
 
 
 function App() {
 
   return (
     <>
-    <CustomUseEffect/>
+    
+    <Provider store={store}>
+    <Counter/>
+    </Provider>
     </>
   )
 }
