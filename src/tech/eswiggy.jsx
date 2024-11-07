@@ -8,8 +8,8 @@ import ColorSchemesExample from './navbar'
 
 function Eswiggy() {
 
-    const [data,setData] = useState([])
-    useEffect(()=>{
+  const [data,setData] = useState([])
+  useEffect(()=>{
         fetchData()
     },[])
 
