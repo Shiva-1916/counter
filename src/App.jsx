@@ -1,14 +1,15 @@
+import React from "react"
+import Eswiggy from "./tech/eswiggy"
 
-import './index.css'
-import CustomUseEffect from './components/hooks/useEffect/exampleuseEffect';
 
 
 function App() {
 
   return (
     <>
-    <CustomUseEffect/>
+     <Eswiggy/>
     </>
+
   )
 }
 
