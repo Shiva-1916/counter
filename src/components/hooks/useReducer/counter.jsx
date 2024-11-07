@@ -1,35 +1,46 @@
-import React, { createContext, useReducer } from 'react'
+import React, { useReducer } from 'react'
+
+
+
+
+
 
 export const CustomCounter = () => {
-   
-    const ReducerFunction = (currentState,Action) =>{
-        switch (Action.type)
-        {
-            case "INCREMENT_TYPE":
-                return(dispatch(...currentState,currentState.count +1))
-        }
-        
-}
+
+  
     const initialState = {
         count:0
     }
 
-const IncrementHandler = ()=>{
-    dispatch(
+  
+    const ReducerFunction = (currentState,Action) =>{
+        switch (Action.type)
         {
-            type: "IncrementHandler"
+            case "INCREMENT_TYPE":
+                
+                return {...currentState,count:currentState.count+1}
         }
-    )
+        
+    }
+
+   
+    const [state,dispatch] = useReducer(ReducerFunction,initialState)
+    
+  
 
     
- const [state,dispatch] = useReducer(ReducerFunction,initialState)
+ const incrementHandler = ()=>{
+   dispatch({type:"INCREMENT_TYPE",payload:1})
+ }
  
   return (
     <div>
-      <h2>{state} </h2>
-      <button onClick={IncrementHandler}>increment</button>
+      <h2>{state.count} </h2>
+      <button onClick={incrementHandler}>increment</button>
+      <h1>shiva</h1>
     </div>
   )
+
+
 }
-}
-export default CustomCounter
+
